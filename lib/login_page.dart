@@ -20,6 +20,7 @@ class _LoginPageState extends State<LoginPage> {
             Text(
               'Hello Welcome Back!',
               style: TextStyle(
+                fontFamily: 'Roboto',
                 fontWeight: FontWeight.bold,
                 fontSize: 33,
               ),
