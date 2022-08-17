@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
             //Hello again
             Text(
               'Hello Welcome Back!',
-              style: GoogleFonts.bebasNeue(
+              style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 33,
               ),
