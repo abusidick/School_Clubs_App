@@ -26,6 +26,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             SizedBox(height: 10),
+
             Text(
               'Login Page',
               style: TextStyle(
@@ -33,6 +34,8 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             SizedBox(height: 50),
+
+            SvgPicture.asset('person-circle.svg'),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
