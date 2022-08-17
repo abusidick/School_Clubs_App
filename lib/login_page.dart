@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
             //Hello again
             Text(
               'Hello Welcome Back!',
-              style: TextStyle(
+              style: GoogleFonts.bebasNeue(
                 fontWeight: FontWeight.bold,
                 fontSize: 33,
               ),
@@ -97,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
 
-            SizedBox(height: 20),
+            SizedBox(height: 25),
             //Not a Member
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
