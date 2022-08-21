@@ -8,21 +8,19 @@ class UserScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:
-         Column(
-            children: const[
-              ListTile(
-                title: Text(
-                  'Address',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-                leading: Icon(IconlyBold.location),
-                trailing: Icon(IconlyLight.arrowRight2),
+        child: Column(
+          children: const [
+            ListTile(
+              title: Text(
+                'Address',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-            ],
-          ),
+              leading: Icon(IconlyBold.location),
+              trailing: Icon(IconlyLight.arrowRight2),
+            ),
+          ],
         ),
-      
+      ),
     );
   }
 }
