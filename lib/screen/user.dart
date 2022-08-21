@@ -10,13 +10,15 @@ class UserScreen extends StatefulWidget {
 }
 
 class _UserScreenState extends State<UserScreen> {
-  final TextEditingController _addressTextController = TextEditingController(text: "");
+  final TextEditingController _addressTextController =
+      TextEditingController(text: "");
 
   @override
-  void dispose(){
+  void dispose() {
     _addressTextController.dispose();
     super.dispose();
   }
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
@@ -50,7 +52,7 @@ class _UserScreenState extends State<UserScreen> {
                 TextWidget(
                     text: 'email@gmail.com',
                     color: Color(0xff0e0c0c),
-                    textSize: 10),
+                    textSize: 20),
                 const SizedBox(
                   height: 10,
                 ),
@@ -58,13 +60,11 @@ class _UserScreenState extends State<UserScreen> {
                     text: 'Bsc Computer Science',
                     color: Color(0xff0e0c0c),
                     textSize: 20),
-
-                 const SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-
                 const Divider(
-                  thickness: 20,
+                  thickness: 2,
                 ),
                 const SizedBox(
                   height: 20,
@@ -78,9 +78,13 @@ class _UserScreenState extends State<UserScreen> {
                           builder: (context) {
                             return AlertDialog(
                               title: Text("Update Adrress"),
-                              content: TextField(maxLines: 30,decoration: InputDecoration(hintText: 'Your Address'),),
-                             
-                              );
+                              content: TextField(
+                                controller: _addressTextController,
+                                maxLines: 30,
+                                decoration:
+                                  InputDecoration(hintText: 'Your Address'),
+                              ),
+                            );
                           });
                     }),
                 _listTiles(
