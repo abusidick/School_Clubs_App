@@ -13,7 +13,7 @@ class CategoriesScreen extends StatelessWidget {
         elevation: 0,
         title: TextWidget(
           text: "Categories",
-          color: Colors.cyan,
+          color: Colors.black,
           textSize: 24,
           isTitle: true,
         ),
