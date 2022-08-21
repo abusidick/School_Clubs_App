@@ -7,7 +7,7 @@ class UserScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+      body: SingleChildScrollView( Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -28,7 +28,7 @@ class UserScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ),);
   }
 
   Widget _listTiles({
