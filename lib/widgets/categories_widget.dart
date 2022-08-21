@@ -12,7 +12,7 @@ class CategoriesWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
             color: Colors.red.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(12),
             border: Border.all(
               color: Colors.red.withOpacity(0.7),
               width: 2,
