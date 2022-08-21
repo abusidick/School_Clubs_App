@@ -23,7 +23,7 @@ class UserScreen extends StatelessWidget {
                 thickness: 2,
               ),
               const SizedBox(
-                height: 15,
+                height: 5,
               ),
               _listTiles(
                   title: 'Address',
