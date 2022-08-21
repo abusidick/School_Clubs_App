@@ -27,7 +27,7 @@ class CategoriesWidget extends StatelessWidget {
                       image: AssetImage(
                         'images/People.jpg',
                       ),
-                      fit: BoxFit.fill)),
+                      fit: BoxFit.cover)),
             ),
             TextWidget(
               text: 'Educational',
