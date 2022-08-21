@@ -13,7 +13,7 @@ class UserScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               RichText(
-                  text: const TextSpan('Hi, ',
+                  text: const TextSpan( text: 'Hi, ',
                       style: TextStyle(
                           color: Colors.cyan,
                           fontSize: 25,
