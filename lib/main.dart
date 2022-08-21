@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:helloworld/screen/home.dart';
 import 'login_page.dart';
 import 'screen/home.dart';
+import 'screen/bottom_bar.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'WorkSans'),
       // A widget which will be started on application startup
-      home: HomeScreen(),
+      home: BottomBar(),
     );
   }
 }
