@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xffdb2d2a),
+        backgroundColor: Colors.white,
         body: SafeArea(
             child: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -94,7 +94,6 @@ class _LoginPageState extends State<LoginPage> {
                     'Sign In',
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -108,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
               children: [
                 Text(
                   'Not a member?',
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                  style: TextStyle(color: Color(0xff0f0f0f), fontSize: 18),
                 ),
                 Text(
                   ' Register now',
