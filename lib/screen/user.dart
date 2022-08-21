@@ -7,7 +7,7 @@ class UserScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView( Center(
+      body: Center(child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -27,8 +27,8 @@ class UserScreen extends StatelessWidget {
                 title: 'Log Out', icon: IconlyBold.logout, onPressed: () {}),
           ],
         ),
-      ),
-    ),);
+      ),),
+    );
   }
 
   Widget _listTiles({
