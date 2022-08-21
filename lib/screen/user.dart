@@ -78,7 +78,7 @@ class _UserScreenState extends State<UserScreen> {
                           context: context,
                           builder: (context) {
                             return AlertDialog(
-                              title: Text("Update Adrress"),
+                              title: const Text("Update Adrress"),
                               content: TextField(
                                 onChanged: (value) {
                                   // _addressTextController
@@ -86,10 +86,11 @@ class _UserScreenState extends State<UserScreen> {
                                 controller: _addressTextController,
                                 maxLines: 5,
                                 decoration:
-                                    InputDecoration(hintText: 'Your Address'),
+                                  const InputDecoration(hintText: 'Your Address'),
                               ),
                               actions: [
-                                TextButton(onPressed: (){}, child: Text('Update')),
+                                TextButton(
+                                  onPressed: () {}, child: const Text('Update')),
                               ],
                             );
                           });
@@ -107,7 +108,14 @@ class _UserScreenState extends State<UserScreen> {
                 _listTiles(
                     title: 'Log Out',
                     icon: IconlyBold.logout,
-                    onPressed: () {}),
+                    onPressed: () async {
+                      await showDialog(
+                        context: context,
+                        builder: (context){
+
+                        };
+                      );
+                    }),
               ],
             ),
           ),
@@ -115,6 +123,7 @@ class _UserScreenState extends State<UserScreen> {
       ),
     );
   }
+  
 
   Widget _listTiles({
     required String title,
