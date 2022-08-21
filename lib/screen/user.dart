@@ -7,27 +7,31 @@ class UserScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            _listTiles(
-                title: 'Address', icon: IconlyBold.location, onPressed: () {}),
-            _listTiles(
-                title: 'Clubs', icon: IconlyBold.user3, onPressed: () {}),
-            _listTiles(
-                title: 'Notifications',
-                icon: IconlyBold.notification,
-                onPressed: () {}),
-            _listTiles(
-                title: 'Forget Password',
-                icon: IconlyBold.lock,
-                onPressed: () {}),
-            _listTiles(
-                title: 'Log Out', icon: IconlyBold.logout, onPressed: () {}),
-          ],
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              _listTiles(
+                  title: 'Address',
+                  icon: IconlyBold.location,
+                  onPressed: () {}),
+              _listTiles(
+                  title: 'Clubs', icon: IconlyBold.user3, onPressed: () {}),
+              _listTiles(
+                  title: 'Notifications',
+                  icon: IconlyBold.notification,
+                  onPressed: () {}),
+              _listTiles(
+                  title: 'Forget Password',
+                  icon: IconlyBold.lock,
+                  onPressed: () {}),
+              _listTiles(
+                  title: 'Log Out', icon: IconlyBold.logout, onPressed: () {}),
+            ],
+          ),
         ),
-      ),),
+      ),
     );
   }
 
@@ -40,7 +44,7 @@ class UserScreen extends StatelessWidget {
     return ListTile(
       title: Text(
         title,
-        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.normal),
       ),
       subtitle: Text(subtitle == null ? "" : subtitle),
       leading: Icon(icon),
