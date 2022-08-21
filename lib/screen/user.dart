@@ -84,10 +84,13 @@ class _UserScreenState extends State<UserScreen> {
                                   // _addressTextController
                                 },
                                 controller: _addressTextController,
-                                // maxLines: 30,
+                                maxLines: 5,
                                 decoration:
                                     InputDecoration(hintText: 'Your Address'),
                               ),
+                              actions: [
+                                TextButton(onPressed: (){}, child: Text('Update')),
+                              ],
                             );
                           });
                     }),
