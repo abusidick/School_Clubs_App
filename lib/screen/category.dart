@@ -6,15 +6,18 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GridView.count(
-        crossAxisCount: 2,
-        childAspectRatio: 240 / 250,
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        children: List.generate(6, (index) {
-          return CategoriesWidget();
-        }),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Scaffold(
+        body: GridView.count(
+          crossAxisCount: 2,
+          childAspectRatio: 240 / 250,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          children: List.generate(6, (index) {
+            return CategoriesWidget();
+          }),
+        ),
       ),
     );
   }
