@@ -16,15 +16,22 @@ class UserScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 RichText(
-                    text: const TextSpan(
-                        text: 'Hi, ',
-                        style: TextStyle(
-                            color: Colors.cyan,
-                            fontSize: 27,
-                            fontWeight: FontWeight.bold),
-                            
-                            ),
-                            ),
+                  text: const TextSpan(
+                    text: 'Hi, ',
+                    style: TextStyle(
+                      color: Colors.cyan,
+                      fontSize: 27,
+                      fontWeight: FontWeight.bold),
+                    children: <TextSpan>[
+                      TextSpan(
+                      text:'Lawrence Smith',
+                      style: TextStyle( color: Colors.black,
+                      fontSize: 27,
+                      fontWeight: FontWeight.bold),
+                      )
+                    ]
+                  ),
+                ),
                 const Divider(
                   thickness: 2,
                 ),
