@@ -84,7 +84,7 @@ class _UserScreenState extends State<UserScreen> {
                                   // _addressTextController
                                 },
                                 controller: _addressTextController,
-                                maxLines: 30,
+                                // maxLines: 30,
                                 decoration:
                                     InputDecoration(hintText: 'Your Address'),
                               ),
