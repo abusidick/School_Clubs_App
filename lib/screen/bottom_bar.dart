@@ -36,9 +36,11 @@ class _BottomBarState extends State<BottomBar> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(IconlyLight.home),
+            label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconlyLight.home),
+            icon: Icon(IconlyLight.category),
+            label: "Categories",
           ),
         ],
       ),
