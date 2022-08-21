@@ -10,21 +10,34 @@ class UserScreen extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:  [
-            _listTiles(title: 'Address', icon: IconlyBold.location, onPressed: () {}),
-            _listTiles(title: 'Clubs', icon: IconlyBold.user3, onPressed: () {}),
-            _listTiles(title: 'Notifications', icon: IconlyBold.notification, onPressed: () {}),
-            _listTiles(title: 'Forget Password', icon: IconlyBold.lock, onPressed: () {}),
-            _listTiles(title: 'Log Out', icon: IconlyBold.logout, onPressed: () {}),
+          children: [
+            _listTiles(
+                title: 'Address', icon: IconlyBold.location, onPressed: () {}),
+            _listTiles(
+                title: 'Clubs', icon: IconlyBold.user3, onPressed: () {}),
+            _listTiles(
+                title: 'Notifications',
+                icon: IconlyBold.notification,
+                onPressed: () {}),
+            _listTiles(
+                title: 'Forget Password',
+                icon: IconlyBold.lock,
+                onPressed: () {}),
+            _listTiles(
+                title: 'Log Out', icon: IconlyBold.logout, onPressed: () {}),
           ],
         ),
       ),
     );
   }
 
-  Widget _listTiles({required String title,String? subtitle,required IconData icon,required Function onPressed,}){
-
-    return  ListTile(
+  Widget _listTiles({
+    required String title,
+    String? subtitle,
+    required IconData icon,
+    required Function onPressed,
+  }) {
+    return ListTile(
       title: Text(
         title,
         style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
