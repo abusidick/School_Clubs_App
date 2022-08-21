@@ -85,12 +85,13 @@ class _UserScreenState extends State<UserScreen> {
                                 },
                                 controller: _addressTextController,
                                 maxLines: 5,
-                                decoration:
-                                  const InputDecoration(hintText: 'Your Address'),
+                                decoration: const InputDecoration(
+                                    hintText: 'Your Address'),
                               ),
                               actions: [
                                 TextButton(
-                                  onPressed: () {}, child: const Text('Update')),
+                                    onPressed: () {},
+                                    child: const Text('Update')),
                               ],
                             );
                           });
@@ -110,18 +111,35 @@ class _UserScreenState extends State<UserScreen> {
                     icon: IconlyBold.logout,
                     onPressed: () async {
                       await showDialog(
-                        context: context,
-                        builder: (context){
-                          return AlertDialog(
-                            title: const Text('Sign Out'),
-                            content: const Text("Do you want to sign out!"),
-                            actions: [
-                              TextButton(onPressed: (){}, child: TextWidget(text: "Cancel", color: Colors.cyan, textSize: 18)),
-                              TextButton(onPressed: (){}, child: TextWidget(text: "OK", color: Colors.cyan, textSize: 18))
-                            ],
-                          );
-                        }
-                      );
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: const Text('Sign Out'),
+                              content: const Text("Do you want to sign out!"),
+                              actions: [
+                                TextButton(
+                                    onPressed: () {
+                                      if (Navigator.canPop(context)) {
+                                        Navigator.pop(context);
+                                      }
+                                    },
+                                    child: TextWidget(
+                                        text: "Cancel",
+                                        color: Colors.cyan,
+                                        textSize: 18)),
+                                TextButton(
+                                    onPressed: () {
+                                      if (Navigator.canPop(context)) {
+                                        Navigator.pop(context);
+                                      }
+                                    },
+                                    child: TextWidget(
+                                        text: "OK",
+                                        color: Colors.cyan,
+                                        textSize: 18))
+                              ],
+                            );
+                          });
                     }),
               ],
             ),
@@ -130,7 +148,6 @@ class _UserScreenState extends State<UserScreen> {
       ),
     );
   }
-  
 
   Widget _listTiles({
     required String title,
