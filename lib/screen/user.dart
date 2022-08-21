@@ -2,10 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:helloworld/widgets/text_widget.dart';
 
-class UserScreen extends StatelessWidget {
+class UserScreen extends StatefulWidget {
   const UserScreen({Key? key}) : super(key: key);
 
   @override
+  State<UserScreen> createState() => _UserScreenState();
+}
+
+class _UserScreenState extends State<UserScreen> {
+  final TextEditingController _addressTextController = TextEditingController(text: "");
+
+  @override
+  void dispose(){
+    _addressTextController.dispose();
+    super.dispose();
+  }
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
@@ -34,21 +45,26 @@ class UserScreen extends StatelessWidget {
                       ]),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 TextWidget(
                     text: 'email@gmail.com',
                     color: Color(0xff0e0c0c),
-                    textSize: 20),
+                    textSize: 10),
                 const SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 TextWidget(
                     text: 'Bsc Computer Science',
                     color: Color(0xff0e0c0c),
                     textSize: 20),
+
+                 const SizedBox(
+                  height: 20,
+                ),
+
                 const Divider(
-                  thickness: 2,
+                  thickness: 20,
                 ),
                 const SizedBox(
                   height: 20,
@@ -56,15 +72,22 @@ class UserScreen extends StatelessWidget {
                 _listTiles(
                     title: 'Address',
                     icon: IconlyBold.location,
-                    onPressed: () async{
-                      await showDialog(context: context, builder: (context){
-                        return AlertDialog(
-                          title
-                        );
-                      });
+                    onPressed: () async {
+                      await showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: Text("Update Adrress"),
+                              content: TextField(maxLines: 30,decoration: InputDecoration(hintText: 'Your Address'),),
+                             
+                              );
+                          });
                     }),
                 _listTiles(
-                    title: 'Clubs',subtitle: 'Evandy hostel', icon: IconlyBold.user3, onPressed: () {}),
+                    title: 'Clubs',
+                    subtitle: 'Evandy hostel',
+                    icon: IconlyBold.user3,
+                    onPressed: () {}),
                 _listTiles(
                     title: 'Notifications',
                     icon: IconlyBold.notification,
