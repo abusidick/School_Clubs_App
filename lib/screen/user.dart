@@ -21,7 +21,7 @@ class _UserScreenState extends State<UserScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppBar(
+      appBar: AppBar(
         elevation: 5,
         title: TextWidget(
           text: "Profile",
