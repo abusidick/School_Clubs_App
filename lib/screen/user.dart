@@ -12,6 +12,10 @@ class UserScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              RichText(
+                text: TextSpan('Hi, ', 
+                style:TextStyle(color: Colors.cyan,fontSize: 25,fontWeight: FontWeight.bold))
+                ),
               const Divider(
                 thickness: 2,
               ),
