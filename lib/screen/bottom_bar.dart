@@ -21,19 +21,20 @@ class _BottomBarState extends State<BottomBar> {
     const UserScreen()
   ];
 
-  void _selectedPage(int index){
+  void _selectedPage(int index) {
     setState(() {
       _selectedIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[],
+      body: _pages[0],
       bottomNavigationBar: BottomNavigationBar(
-        items:const <BottomNavigationBarItem> [
-          BottomNavigationBarItem(icon: Icon(IconlyLight.home))
-        ]),
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(icon: Icon(IconlyLight.home))
+          ]),
     );
   }
 }
