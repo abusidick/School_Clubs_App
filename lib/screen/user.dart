@@ -42,7 +42,7 @@ class UserScreen extends StatelessWidget {
         title,
         style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
       ),
-      subtitle: Text(subtitle!),
+      subtitle: Text(subtitle == null ? "": subtitle),
       leading: Icon(icon),
       trailing: const Icon(IconlyLight.arrowRight2),
       onTap: () {
