@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
-
 class UserScreen extends StatelessWidget {
   const UserScreen({Key? key}) : super(key: key);
 
@@ -15,7 +14,7 @@ class UserScreen extends StatelessWidget {
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           leading: Icon(IconlyBold.location),
-          trailing: Icon(IconlyBold.arrowRight2),
+          trailing: Icon(IconlyLight.arrowRight2),
         ),
       ),
     );
