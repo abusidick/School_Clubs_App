@@ -13,7 +13,7 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 3;
 
   final List _pages = [
     const HomeScreen(),
