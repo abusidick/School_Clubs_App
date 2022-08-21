@@ -12,6 +12,12 @@ class UserScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const Divider(
+                thickness: 2,
+              ),
+              const SizedBox(
+                height: 20,
+              )
               _listTiles(
                   title: 'Address',
                   icon: IconlyBold.location,
@@ -44,7 +50,7 @@ class UserScreen extends StatelessWidget {
     return ListTile(
       title: Text(
         title,
-        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.normal),
+        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
       ),
       subtitle: Text(subtitle == null ? "" : subtitle),
       leading: Icon(icon),
