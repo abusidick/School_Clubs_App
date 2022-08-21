@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/screen/home.dart';
 import 'login_page.dart';
+import 'screen/home.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
       // you want
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'WorkSans'),
       // A widget which will be started on application startup
-      home: LoginPage(),
+      home: HomeScreen(),
     );
   }
 }
