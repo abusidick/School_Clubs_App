@@ -112,8 +112,15 @@ class _UserScreenState extends State<UserScreen> {
                       await showDialog(
                         context: context,
                         builder: (context){
-
-                        };
+                          return AlertDialog(
+                            title: const Text('Sign Out'),
+                            content: const Text("Do you want to sign out!"),
+                            actions: [
+                              TextButton(onPressed: (){}, child: TextWidget(text: "Cancel", color: Colors.cyan, textSize: 18)),
+                              TextButton(onPressed: (){}, child: TextWidget(text: "OK", color: Colors.cyan, textSize: 18))
+                            ],
+                          );
+                        }
                       );
                     }),
               ],
