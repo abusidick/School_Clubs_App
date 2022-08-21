@@ -33,26 +33,32 @@ class _BottomBarState extends State<BottomBar> {
     return Scaffold(
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: _selectedIndex,
         onTap: _selectedPage,
-        items:  <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 0 ? IconlyBold.home : IconlyLight.home),
+            icon:
+                Icon(_selectedIndex == 0 ? IconlyBold.home : IconlyLight.home),
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 1 ? IconlyBold.category :IconlyLight.category),
+            icon: Icon(_selectedIndex == 1
+                ? IconlyBold.category
+                : IconlyLight.category),
             label: "Categories",
           ),
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 2 ? IconlyBold.user3 :IconlyLight.user3),
+            icon: Icon(
+                _selectedIndex == 2 ? IconlyBold.user3 : IconlyLight.user3),
             label: "Clubs",
           ),
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 3 ? IconlyBold.profile :IconlyLight.profile),
+            icon: Icon(
+                _selectedIndex == 3 ? IconlyBold.profile : IconlyLight.profile),
             label: "Profile",
           ),
         ],
