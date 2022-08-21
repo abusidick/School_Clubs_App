@@ -80,6 +80,9 @@ class _UserScreenState extends State<UserScreen> {
                             return AlertDialog(
                               title: Text("Update Adrress"),
                               content: TextField(
+                                onChanged: (value) {
+                                  // _addressTextController
+                                },
                                 controller: _addressTextController,
                                 maxLines: 30,
                                 decoration:
@@ -89,9 +92,7 @@ class _UserScreenState extends State<UserScreen> {
                           });
                     }),
                 _listTiles(
-                    title: 'Clubs',
-                    icon: IconlyBold.user3,
-                    onPressed: () {}),
+                    title: 'Clubs', icon: IconlyBold.user3, onPressed: () {}),
                 _listTiles(
                     title: 'Notifications',
                     icon: IconlyBold.notification,
@@ -123,7 +124,10 @@ class _UserScreenState extends State<UserScreen> {
         title,
         style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w500),
       ),
-      subtitle: Text(subtitle == null ? "" : subtitle,style: TextStyle(fontSize: 20,fontWeight: FontWeight.normal),),
+      subtitle: Text(
+        subtitle == null ? "" : subtitle,
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
+      ),
       leading: Icon(icon),
       trailing: const Icon(IconlyLight.arrowRight2),
       onTap: () {
