@@ -17,7 +17,7 @@ class UserScreen extends StatelessWidget {
               ),
               const SizedBox(
                 height: 20,
-              )
+              ),
               _listTiles(
                   title: 'Address',
                   icon: IconlyBold.location,
