@@ -37,11 +37,11 @@ class _BottomBarState extends State<BottomBar> {
         onTap: _selectedPage,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(IconlyLight.home),
+            icon: Icon(IconlyBold.home),
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconlyLight.category),
+            icon: Icon(IconlyBold.category),
             label: "Categories",
           ),
           BottomNavigationBarItem(
@@ -49,7 +49,7 @@ class _BottomBarState extends State<BottomBar> {
             label: "Clubs",
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconlyLight.profile),
+            icon: Icon(IconlyBold.profile),
             label: "Profile",
           ),
         ],
