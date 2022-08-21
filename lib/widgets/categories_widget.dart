@@ -21,8 +21,8 @@ class CategoriesWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
-              height: _screenWidth * 0.3,
-              width: _screenWidth * 0.3,
+              height: _screenWidth * 0.5,
+              width: _screenWidth * 0.5,
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(
