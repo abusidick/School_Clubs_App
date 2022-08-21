@@ -13,16 +13,17 @@ class UserScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               RichText(
-                  text: const TextSpan( text: 'Hi, ',
+                  text: const TextSpan(
+                      text: 'Hi, ',
                       style: TextStyle(
                           color: Colors.cyan,
-                          fontSize: 25,
+                          fontSize: 27,
                           fontWeight: FontWeight.bold))),
               const Divider(
                 thickness: 2,
               ),
               const SizedBox(
-                height: 20,
+                height: 15,
               ),
               _listTiles(
                   title: 'Address',
