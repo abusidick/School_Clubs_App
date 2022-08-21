@@ -21,6 +21,15 @@ class _UserScreenState extends State<UserScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+       appBar: AppBar(
+        elevation: 5,
+        title: TextWidget(
+          text: "Profile",
+          color: Colors.black,
+          textSize: 24,
+          isTitle: true,
+        ),
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
