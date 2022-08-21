@@ -49,8 +49,8 @@ class _BottomBarState extends State<BottomBar> {
             label: "Clubs",
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconlyLight.category),
-            label: "Categories",
+            icon: Icon(IconlyLight.profile),
+            label: "Profile",
           ),
         ],
       ),
