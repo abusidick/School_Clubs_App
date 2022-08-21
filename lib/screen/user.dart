@@ -21,7 +21,10 @@ class UserScreen extends StatelessWidget {
                         style: TextStyle(
                             color: Colors.cyan,
                             fontSize: 27,
-                            fontWeight: FontWeight.bold))),
+                            fontWeight: FontWeight.bold),
+                            
+                            ),
+                            ),
                 const Divider(
                   thickness: 2,
                 ),
@@ -43,7 +46,9 @@ class UserScreen extends StatelessWidget {
                     icon: IconlyBold.lock,
                     onPressed: () {}),
                 _listTiles(
-                    title: 'Log Out', icon: IconlyBold.logout, onPressed: () {}),
+                    title: 'Log Out',
+                    icon: IconlyBold.logout,
+                    onPressed: () {}),
               ],
             ),
           ),
