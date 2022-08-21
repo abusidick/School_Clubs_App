@@ -13,7 +13,7 @@ class UserScreen extends StatelessWidget {
             ListTile(
               title: Text(
                 'Address',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               leading: Icon(IconlyBold.location),
               trailing: Icon(IconlyLight.arrowRight2),
@@ -21,7 +21,7 @@ class UserScreen extends StatelessWidget {
             ListTile(
               title: Text(
                 'Clubs',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               leading: Icon(IconlyBold.user3),
               trailing: Icon(IconlyLight.arrowRight2),
@@ -29,7 +29,7 @@ class UserScreen extends StatelessWidget {
             ListTile(
               title: Text(
                 'Notifications',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               leading: Icon(IconlyBold.notification),
               trailing: Icon(IconlyLight.arrowRight2),
@@ -37,7 +37,7 @@ class UserScreen extends StatelessWidget {
             ListTile(
               title: Text(
                 'Forget Password',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               leading: Icon(IconlyBold.lock),
               trailing: Icon(IconlyLight.arrowRight2),
@@ -45,7 +45,7 @@ class UserScreen extends StatelessWidget {
             ListTile(
               title: Text(
                 'Log Out',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               leading: Icon(IconlyBold.logout),
               trailing: Icon(IconlyLight.arrowRight2),
