@@ -3,6 +3,7 @@ import 'package:helloworld/screen/category.dart';
 import 'package:helloworld/screen/clubs.dart';
 import 'package:helloworld/screen/home.dart';
 import 'package:helloworld/screen/user.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -32,9 +33,15 @@ class _BottomBarState extends State<BottomBar> {
     return Scaffold(
       body: _pages[0],
       bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(IconlyLight.home))
-          ]),
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(IconlyLight.home),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(IconlyLight.home),
+          ),
+        ],
+      ),
     );
   }
 }
