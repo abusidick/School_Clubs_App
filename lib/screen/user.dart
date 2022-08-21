@@ -73,7 +73,7 @@ class UserScreen extends StatelessWidget {
     return ListTile(
       title: Text(
         title,
-        style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w600),
+        style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w500),
       ),
       subtitle: Text(subtitle == null ? "" : subtitle),
       leading: Icon(icon),
