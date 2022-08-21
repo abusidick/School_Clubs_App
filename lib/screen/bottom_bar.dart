@@ -31,8 +31,10 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[0],
+      body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: _selectedPage,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(IconlyLight.home),
@@ -42,7 +44,6 @@ class _BottomBarState extends State<BottomBar> {
             icon: Icon(IconlyLight.category),
             label: "Categories",
           ),
-          
         ],
       ),
     );
