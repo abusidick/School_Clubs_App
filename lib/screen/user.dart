@@ -11,7 +11,7 @@ class UserScreen extends StatelessWidget {
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,10 +33,16 @@ class UserScreen extends StatelessWidget {
                         )
                       ]),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 TextWidget(
                     text: 'email@gmail.com',
                     color: Color(0xff0e0c0c),
                     textSize: 20),
+                const SizedBox(
+                  height: 20,
+                ),
                 TextWidget(
                     text: 'Bsc Computer Science',
                     color: Color(0xff0e0c0c),
