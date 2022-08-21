@@ -34,7 +34,9 @@ class UserScreen extends StatelessWidget {
                       ]),
                 ),
                 TextWidget(
-                    text: 'email@gmail.com', color: Colors.black, textSize: 23),
+                    text: 'email@gmail.com', color: Colors.black12, textSize: 20),
+                TextWidget(
+                    text: 'Bsc Computer Science', color: Colors.black12, textSize: 20),
                 const Divider(
                   thickness: 2,
                 ),
