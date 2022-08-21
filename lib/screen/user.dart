@@ -71,6 +71,7 @@ class _UserScreenState extends State<UserScreen> {
                 ),
                 _listTiles(
                     title: 'Address',
+                    subtitle: 'Evandy hostel',
                     icon: IconlyBold.location,
                     onPressed: () async {
                       await showDialog(
@@ -82,14 +83,13 @@ class _UserScreenState extends State<UserScreen> {
                                 controller: _addressTextController,
                                 maxLines: 30,
                                 decoration:
-                                  InputDecoration(hintText: 'Your Address'),
+                                    InputDecoration(hintText: 'Your Address'),
                               ),
                             );
                           });
                     }),
                 _listTiles(
                     title: 'Clubs',
-                    subtitle: 'Evandy hostel',
                     icon: IconlyBold.user3,
                     onPressed: () {}),
                 _listTiles(
@@ -123,7 +123,7 @@ class _UserScreenState extends State<UserScreen> {
         title,
         style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w500),
       ),
-      subtitle: Text(subtitle == null ? "" : subtitle),
+      subtitle: Text(subtitle == null ? "" : subtitle,style: TextStyle(fontSize: 20,fontWeight: FontWeight.normal),),
       leading: Icon(icon),
       trailing: const Icon(IconlyLight.arrowRight2),
       onTap: () {
