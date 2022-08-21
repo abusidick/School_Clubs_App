@@ -9,7 +9,7 @@ class CategoriesScreen extends StatelessWidget {
     return Scaffold(
       body: GridView.count(
         crossAxisCount: 2,
-        childAspectRatio: 240 / 250,
+        // childAspectRatio: 240 / 250,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
         children: List.generate(6, (index) {
