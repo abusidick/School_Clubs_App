@@ -24,7 +24,8 @@ class CategoriesWidget extends StatelessWidget {
               width: _screenWidth * 0.3,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('images/People.jpg'), fit: BoxFit.fill)),
+                      image: AssetImage('images/People.jpg'),
+                      fit: BoxFit.fill)),
             ),
             TextWidget(
               text: 'Educational',
