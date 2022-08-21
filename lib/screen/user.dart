@@ -9,6 +9,7 @@ class UserScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             ListTile(
               title: Text(
