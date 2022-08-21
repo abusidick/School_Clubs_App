@@ -56,9 +56,15 @@ class UserScreen extends StatelessWidget {
                 _listTiles(
                     title: 'Address',
                     icon: IconlyBold.location,
-                    onPressed: () {}),
+                    onPressed: () async{
+                      await showDialog(context: context, builder: (context){
+                        return AlertDialog(
+                          title
+                        );
+                      });
+                    }),
                 _listTiles(
-                    title: 'Clubs', icon: IconlyBold.user3, onPressed: () {}),
+                    title: 'Clubs',subtitle: 'Evandy hostel', icon: IconlyBold.user3, onPressed: () {}),
                 _listTiles(
                     title: 'Notifications',
                     icon: IconlyBold.notification,
