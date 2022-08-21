@@ -6,17 +6,23 @@ class UserScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: ListTile(
-          title: Text(
-            'Address',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        child:
+         Column(
+            children: const[
+              ListTile(
+                title: Text(
+                  'Address',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                ),
+                leading: Icon(IconlyBold.location),
+                trailing: Icon(IconlyLight.arrowRight2),
+              ),
+            ],
           ),
-          leading: Icon(IconlyBold.location),
-          trailing: Icon(IconlyLight.arrowRight2),
         ),
-      ),
+      
     );
   }
 }
