@@ -10,50 +10,31 @@ class UserScreen extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            ListTile(
-              title: Text(
-                'Address',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              leading: Icon(IconlyBold.location),
-              trailing: Icon(IconlyLight.arrowRight2),
-            ),
-            ListTile(
-              title: Text(
-                'Clubs',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              leading: Icon(IconlyBold.user3),
-              trailing: Icon(IconlyLight.arrowRight2),
-            ),
-            ListTile(
-              title: Text(
-                'Notifications',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              leading: Icon(IconlyBold.notification),
-              trailing: Icon(IconlyLight.arrowRight2),
-            ),
-            ListTile(
-              title: Text(
-                'Forget Password',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              leading: Icon(IconlyBold.lock),
-              trailing: Icon(IconlyLight.arrowRight2),
-            ),
-            ListTile(
-              title: Text(
-                'Log Out',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              leading: Icon(IconlyBold.logout),
-              trailing: Icon(IconlyLight.arrowRight2),
-            ),
+          children:  [
+            _listTiles(title: 'Address', icon: IconlyBold.location, onPressed: () {}),
+            _listTiles(title: 'Clubs', icon: IconlyBold.user3, onPressed: () {}),
+            _listTiles(title: 'Notifications', icon: IconlyBold.notification, onPressed: () {}),
+            _listTiles(title: 'Forget Password', icon: IconlyBold.lock, onPressed: () {}),
+            _listTiles(title: 'Log Out', icon: IconlyBold.logout, onPressed: () {}),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _listTiles({required String title,String? subtitle,required IconData icon,required Function onPressed,}){
+
+    return  ListTile(
+      title: Text(
+        title,
+        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+      ),
+      subtitle: Text(subtitle!),
+      leading: Icon(icon),
+      trailing: const Icon(IconlyLight.arrowRight2),
+      onTap: () {
+        onPressed();
+      },
     );
   }
 }
