@@ -11,6 +11,7 @@ class UserScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               RichText(
                   text: const TextSpan(
@@ -23,7 +24,7 @@ class UserScreen extends StatelessWidget {
                 thickness: 2,
               ),
               const SizedBox(
-                height: 5,
+                height: 20,
               ),
               _listTiles(
                   title: 'Address',
