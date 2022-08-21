@@ -5,8 +5,8 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text("Categories Screen")),
+    return Scaffold(
+      body: GridView.count(crossAxisCount: 2,childAspectRatio: 240/250,crossAxisSpacing: 10,mainAxisSpacing: 10,),
     );
   }
 }
