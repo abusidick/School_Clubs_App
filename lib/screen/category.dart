@@ -14,7 +14,7 @@ class CategoriesScreen extends StatelessWidget {
           childAspectRatio: 240 / 250,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
-          children: List.generate(6, (index) {
+          children: List.generate(8, (index) {
             return CategoriesWidget();
           }),
         ),
