@@ -17,20 +17,20 @@ class UserScreen extends StatelessWidget {
               children: [
                 RichText(
                   text: const TextSpan(
-                    text: 'Hi, ',
-                    style: TextStyle(
-                      color: Colors.cyan,
-                      fontSize: 27,
-                      fontWeight: FontWeight.bold),
-                    children: <TextSpan>[
-                      TextSpan(
-                      text:'Lawrence Smith',
-                      style: TextStyle( color: Colors.black,
-                      fontSize: 27,
-                      fontWeight: FontWeight.bold),
-                      )
-                    ]
-                  ),
+                      text: 'Hi, ',
+                      style: TextStyle(
+                          color: Colors.cyan,
+                          fontSize: 27,
+                          fontWeight: FontWeight.bold),
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: 'Lawrence Smith',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 27,
+                              fontWeight: FontWeight.w500),
+                        )
+                      ]),
                 ),
                 const Divider(
                   thickness: 2,
