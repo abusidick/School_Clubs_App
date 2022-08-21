@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:helloworld/widgets/text_widget.dart';
 
-
 class UserScreen extends StatelessWidget {
   const UserScreen({Key? key}) : super(key: key);
 
@@ -34,7 +33,8 @@ class UserScreen extends StatelessWidget {
                         )
                       ]),
                 ),
-                TextWidget(text: 'email@gmail.com', color: color, textSize: 23),
+                TextWidget(
+                    text: 'email@gmail.com', color: Colors.black, textSize: 23),
                 const Divider(
                   thickness: 2,
                 ),
