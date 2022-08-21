@@ -18,8 +18,7 @@ class UserScreen extends StatelessWidget {
               leading: Icon(IconlyBold.location),
               trailing: Icon(IconlyLight.arrowRight2),
             ),
-
-             ListTile(
+            ListTile(
               title: Text(
                 'Clubs',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -27,8 +26,7 @@ class UserScreen extends StatelessWidget {
               leading: Icon(IconlyBold.user3),
               trailing: Icon(IconlyLight.arrowRight2),
             ),
-
-             ListTile(
+            ListTile(
               title: Text(
                 'Notifications',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -36,8 +34,7 @@ class UserScreen extends StatelessWidget {
               leading: Icon(IconlyBold.notification),
               trailing: Icon(IconlyLight.arrowRight2),
             ),
-
-             ListTile(
+            ListTile(
               title: Text(
                 'Forget Password',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -45,8 +42,7 @@ class UserScreen extends StatelessWidget {
               leading: Icon(IconlyBold.lock),
               trailing: Icon(IconlyLight.arrowRight2),
             ),
-
-             ListTile(
+            ListTile(
               title: Text(
                 'Log Out',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
