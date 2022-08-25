@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:helloworld/widgets/text_widget.dart';
 
 class CategoriesWidget extends StatelessWidget {
-  const CategoriesWidget({Key? key}) : super(key: key);
-
+  CategoriesWidget(
+      {Key? key,
+      required this.catText,
+      required this.imgPath,
+      this.color = const Color(0xffB7DFF5)})
+      : super(key: key);
+  String catText, imgPath;
+  Color color = Color(0xffB7DFF5);
   @override
   Widget build(BuildContext context) {
     double _screenWidth = MediaQuery.of(context).size.width;
@@ -11,10 +17,10 @@ class CategoriesWidget extends StatelessWidget {
       onTap: () {},
       child: Container(
         decoration: BoxDecoration(
-            color: Colors.red.withOpacity(0.1),
+            color: color.withOpacity(0.1),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: Colors.red.withOpacity(0.7),
+              color: color.withOpacity(0.7),
               width: 2,
             )),
         child: Column(
@@ -23,15 +29,15 @@ class CategoriesWidget extends StatelessWidget {
             Container(
               height: _screenWidth * 0.35,
               width: _screenWidth * 0.4,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(
-                        'images/People.jpg',
+                        imgPath,
                       ),
                       fit: BoxFit.fill)),
             ),
             TextWidget(
-              text: 'Educational',
+              text: catText,
               color: Colors.black,
               textSize: 20,
               isTitle: true,
